@@ -1,10 +1,10 @@
-      package ejercicio_6;
+package ejercicio_seis;
 
 public class EjercicioSeis {
     private int[] numeros;
     private int cantidadActual;
 
-    public Ejercicio6(int capacidad) {
+    public EjercicioSeis(int capacidad) {
         // --- TU CÓDIGO AQUÍ ---
     }
 

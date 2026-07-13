@@ -1,16 +1,16 @@
-package ejercicio_6;
+package ejercicio_seis;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("Pruebas Ejercicio 6 - Manejo de Arreglos")
-public class TestEjercicio6 {
+public class TestEjercicioSeis {
 
     @Test
     @DisplayName("Validar flujo completo del arreglo")
     void testFlujoArreglo() {
-        Ejercicio6 ej6 = new Ejercicio6(3);
+        EjercicioSeis ej6 = new EjercicioSeis(3);
 
         assertTrue(ej6.ingresarNumero(10), "❌ Debería permitir ingresar elementos dentro del límite.");
         assertTrue(ej6.ingresarNumero(20));
