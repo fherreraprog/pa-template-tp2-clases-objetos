@@ -23,6 +23,6 @@ Escriban su solución únicamente en esas secciones. **No renombren clases, mét
 ### Entregar el trabajo
 
 1. Completen los ejercicios y, si corresponde, el archivo de `teoria/`.
-2. Verifiquen con `mvn test` que todo compile y pase.
+2. (opcional) Verifiquen con `mvn test` que todo compile y pase.
 3. Hagan commit siguiendo el estándar de mensajes visto en clase (`tipo: descripción` en modo imperativo) y `push`.
 4. Revisen su puntaje y el detalle de errores en [classroom50.org](https://classroom50.org/).
