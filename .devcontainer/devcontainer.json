@@ -1,11 +1,6 @@
 {
-  "name": "PA - Java 17 Sin Copilot",
-  "image": "mcr.microsoft.com/devcontainers/java:17-bullseye",
-  "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {},
-    "ghcr.io/devcontainers/features/git:1": {},
-    "ghcr.io/devcontainers/features/node:1": {}
-  },
+  "name": "PA - Java 17",
+  "image": "mcr.microsoft.com/devcontainers/java:17-bookworm",
   "customizations": {
     "vscode": {
       "settings": {
