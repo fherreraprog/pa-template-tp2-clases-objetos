@@ -48,6 +48,11 @@ Dada la siguiente clase:
 public class Hora {
     private int hora, minutos, segundos;
 
+    public Hora(int hora, int minutos, int segundos) {
+        this.hora = hora;
+        this.minutos = minutos;
+        this.segundos = segundos;
+    }
     public Hora() {
         hora = 0;
         minutos = 0;
@@ -66,8 +71,8 @@ public class Hora {
         segundos = s;
     }
 
-    public void imprimirHora() {
-        System.out.println(hora + ":" + minutos + ":" + segundos);
+    public String imprimirHora() {
+        return hora + ":" + minutos + ":" + segundos;
     }
 
     public int getHora() {
@@ -89,7 +94,7 @@ public static void main(String[] args) {
     h1 = new Hora();
     h1.setHora();
     h1.setMinutos(23);
-    h1.imprimirHora();
+    System.out.println(h1.imprimirHora());
 }
 ```
 
@@ -97,9 +102,7 @@ public static void main(String[] args) {
 ```java
 public static void main(String[] args) {
     Hora h1, h2;
-    h1 = new Hora();
-    h1.setHora(9);
-    h1.setMinutos("23");
+    h1 = new Hora(9,"23",00);
     h1.imprimirHora();
     h2.setHora(8);
     h2.imprimirHora();
@@ -113,15 +116,15 @@ public static void main(String[] args) {
     Hora h1, h2, h3;
     char valor;
     int aux;
-    h1 = new Hora();
-    h2 = new Hora();
+    h1 = new Hora(20,15,00);
+    h2 = new Hora(08,24,00);
     System.out.println(h2.consultarHora());
     h1.setHora(3);
-    h1.setMinutos(4, 5);
+    h1.setMinutos(4,5);
     h2.setHora(11);
     h2.setH(23);
     valor = h1.consultarMinutos();
-    aux = h2.consultarHora();
+    aux = h2.getHora();
     h1.imprimirHora();
     h2.imprimirHora();
     System.out.println(aux);
@@ -133,15 +136,12 @@ public static void main(String[] args) {
 ```java
 public static void main(String[] args) {
     Hora h1, h2;
-    h1 = new Hora();
-    h2 = new Hora();
-    h1.setHora(12);
-    h1.setMinutos(0);
-    h2.setHora(17);
+    h1 = new Hora(22,00,00);
+    h2 = new Hora(9,00,00);
     h2.setMinutos(30);
     h1.imprimirHora();
-    System.out.println(h2.consultarHora() + ":" + h2.consultarMinutos());
-    System.out.println(h3.consultarHora());
+    System.out.println(h2.getHora() + ":" + h2.getMinutos());
+    System.out.println(h3.getHora());
 }
 ```
 
@@ -180,11 +180,11 @@ e) Crear dos objetos de la clase `Hora` y probar los métodos.
 
 Una fecha se compone de 3 elementos: día, mes y año. Codificar la clase `Fecha` con los siguientes métodos:
 
-a) Al crear el objeto, los valores deben ser válidos. Si son inválidos → `01/01/2013`.  
+a) Al crear el objeto, los valores deben ser válidos. Si son inválidos → `01/01/2026`.  
 b) Devolver día, mes y año.  
 c) Cambiar día, mes y año.  
 d) Obtener el nombre del mes (ej: 1 → "Enero").  
-e) Mostrar la fecha en formato: `1 de Setiembre de 2012`.
+e) Mostrar la fecha en formato: `1 de Setiembre de 2022`.
 
 ---
 

@@ -24,16 +24,15 @@ Implementar una clase `Persona` que siga las siguientes condiciones:
 
 **Restricciones:**  
 - No se debe acceder directamente a los atributos.  
-- Todos los atributos menos el DNI tendrán valores por defecto según su tipo (0 para números, cadena vacía para String, etc.).
 
 **Constructores:**  
-- Constructor por defecto.  
-- Constructor con el nombre.
+- Constructor con todos los parámetros.  
+- Constructor con el nombre, edad, DNI, sexo.
 
 **Métodos:**  
 - `esMayorDeEdad()`: indica si es mayor de edad (devuelve `boolean`).  
 - `comprobarSexo(char sexo)`: comprueba que el sexo introducido es correcto (método privado).  
-- `toString()`: devuelve toda la información del objeto.
+- `toString()`: devuelve toda la información del objeto en formato String.
 
 **Tarea:** Testear la clase implementada.
 
@@ -51,12 +50,12 @@ Implementar la clase correspondiente.
 
 Un teatro se caracteriza por su **nombre** y su **dirección**. En él se realizan **3 obras teatrales** al día. Cada obra tiene un **nombre** y un **precio**.
 
-Realizar el diseño de clases e indicar qué métodos tendría cada clase, teniendo en cuenta que se pueda:
+Realizar la implementación de las clases e indicar qué métodos tendría cada clase, teniendo en cuenta que se pueda:
 
 - Cambiar el nombre del teatro.  
 - Cambiar el nombre y precio de las obras.
 
-Implementar dichas clases.
+Codificar dichas clases.
 
 ---
 
